@@ -1,0 +1,51 @@
+#include<stdio.h>
+#define MAX 50
+int main (){
+	int a,b,c,d;
+	int sum = 0;
+	int first[MAX][MAX],second[MAX][MAX],ab[MAX][MAX];
+	printf("Enter the rows and columns of the 1st matrix: ");
+	scanf ("%d %d", &a, &b);
+	for (int i=0; i<a; i++){
+		for (int j=0; j<b; j++){
+			printf("Enter the element of 1st matrix row %d and column %d:", i+1,j+1);
+			scanf("%d",&first[i][j]);
+		}
+	}
+	for (int i=0; i<a; i++){
+		for (int j=0; j<b; j++){
+			printf("%d ",first[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Enter the rows and columns of the 2nd matrix: ");
+	scanf ("%d %d", &c, &d);
+	for (int i=0; i<c; i++){
+		for (int j=0; j<d; j++){
+			printf("Enter the element of 2nd matrix row %d and column %d:", i+1,j+1);
+			scanf("%d",&second[i][j]);
+		}
+	}
+	for (int i=0; i<a; i++){
+		for (int j=0; j<b; j++){
+			printf("%d ",second[i][j]);
+		}
+		printf("\n");
+	}
+	for(int i=0; i<a; i++){
+		for(int j=0; j<d; j++){
+			for(int k=0; k<c; k++){
+				sum += first[i][k] * second[k][j];
+			}
+			ab[i][j] = sum;
+			sum = 0;
+		}
+	}
+	printf("The product of the matrix will be:\n");
+	for (int i=0; i<b; i++){
+		for (int j=0; j<c; j++){
+			printf("%d ",ab[i][j]);
+		}
+		printf("\n");
+	}
+}
