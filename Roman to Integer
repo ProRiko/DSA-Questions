@@ -1,0 +1,30 @@
+int romanToInt(char *s) {
+    int total = 0;
+    int prev = 0;
+    
+    while (*s) {
+        int current;
+        
+        switch (*s) {
+            case 'I': current = 1; break;
+            case 'V': current = 5; break;
+            case 'X': current = 10; break;
+            case 'L': current = 50; break;
+            case 'C': current = 100; break;
+            case 'D': current = 500; break;
+            case 'M': current = 1000; break;
+            default: return -1; // Invalid character
+        }
+
+        if (current > prev) {
+            total += current - 2 * prev; // Subtract the previously added value
+        } else {
+            total += current;
+        }
+
+        prev = current;
+        s++;
+    }
+    
+    return total;
+}
