@@ -24,3 +24,35 @@ Each **Day-X** folder will include:
 - **Core CS/aptitude notes** for that day  
 
 Example:  
+
+---
+
+## 🧩 Areas I’m Covering
+- Data Structures & Algorithms (DSA)  
+- Core CS (OS, DBMS, CN, OOPs)  
+- Aptitude & Reasoning (for online tests)  
+- Mock Interview Q&A  
+
+---
+
+## 📈 Progress Log
+- Day 1 → Arrays basics + String problems ✅  
+- Day 2 → Subarrays + Prefix sum 🔜  
+- Day 3 → String manipulation + Hashing 🔜  
+- (and so on, till placements...)  
+
+---
+
+## 🎯 End Goal
+By **Jan 2026**:  
+✔️ Strong command over DSA & problem-solving  
+✔️ 3–4 solid projects deployed  
+✔️ Ready for campus & off-campus placements  
+✔️ Land a **high-paying role in CS/Tech**  
+
+---
+
+## 🤝 Connect
+Suggestions, discussions, or collaborations are welcome!  
+Maintained by [**Ribhu Mukherjee**](https://github.com/ProRiko) 🚀
+
