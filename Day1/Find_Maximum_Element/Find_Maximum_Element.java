@@ -1,4 +1,4 @@
-package Day1;
+package Day1.Find_Maximum_Element;
 
 class MaxElement {
     public static int findMax(int[] arr) {
